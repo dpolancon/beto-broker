@@ -1,4 +1,4 @@
-# Pitch: A Living System for Financial Market Self-Discovery
+# Beto-Broker: A Living System for Financial Market Self-Discovery
 
 > Perplexity Computer Contest Submission — April 2026  
 > **Reproducible Prompt v1.0 · No PII · Version-controlled**
