@@ -1,0 +1,15 @@
+{
+  "node_type": "asset",
+  "asset": "NVDA",
+  "bucket": "semiconductors",
+  "score": 120,
+  "weight": 0.24,
+  "delta_threshold": 3,
+  "kappa": -0.000254,
+  "mcv": 0.1955,
+  "sigma_annualized": 0.55,
+  "last_rebalance": "2026-04-08",
+  "rebalance_trigger": "score_update",
+  "status": "active",
+  "notes": "EXAMPLE \u2014 dominant AI name, tightest delta threshold."
+}

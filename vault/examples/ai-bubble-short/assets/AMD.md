@@ -1,0 +1,28 @@
+---
+node_type: asset
+asset: AMD
+bucket: semiconductors
+score: 80
+weight: 0.16
+delta_threshold: 13
+kappa: -5.1e-05
+mcv: 0.1599
+sigma_annualized: 0.5
+last_rebalance: '2026-04-08'
+rebalance_trigger: score_update
+status: active
+notes: "EXAMPLE \u2014 high correlation, looser threshold."
+---
+
+# AMD
+
+> ⚠️ EXAMPLE INSTANTIATION
+
+## Prior
+[See central-node.md]
+
+## Observations
+<!-- Auto-populated from stack commits -->
+
+## Links
+[[central-node]] [[pii-index]]

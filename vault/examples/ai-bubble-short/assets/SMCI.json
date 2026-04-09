@@ -1,0 +1,15 @@
+{
+  "node_type": "asset",
+  "asset": "SMCI",
+  "bucket": "semiconductors",
+  "score": 45,
+  "weight": 0.09,
+  "delta_threshold": 2,
+  "kappa": 0.000344,
+  "mcv": 0.183,
+  "sigma_annualized": 0.7,
+  "last_rebalance": "2026-04-08",
+  "rebalance_trigger": "score_update",
+  "status": "active",
+  "notes": "EXAMPLE \u2014 idiosyncratic vol, tightest threshold."
+}

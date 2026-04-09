@@ -1,0 +1,218 @@
+{
+  "index_name": "Prior-Implied Index",
+  "initialized": true,
+  "init_date": "2026-04-08",
+  "init_level": 100.0,
+  "current_level": 100.0,
+  "nav_level": 100.0,
+  "alpha": 0.0,
+  "universe": [
+    "AMD",
+    "ARKK",
+    "GOOGL",
+    "MSFT",
+    "NVDA",
+    "PLTR",
+    "QQQ",
+    "SMCI"
+  ],
+  "assets": {
+    "AMD": {
+      "score": 52.05,
+      "weight": 0.102312,
+      "delta_threshold": 13,
+      "kappa": -5.1e-05,
+      "mcv": 0.1599,
+      "sigma_annualized": 0.5907,
+      "last_score_update": "2026-04-09T03:25:40.434556",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": 10.722476042023999,
+        "p_fcf": 82.39399616472978,
+        "ai_exposure": 0.7,
+        "short_interest": 0.0199,
+        "days_to_cover": 0.97,
+        "borrow_fee": 0.00995,
+        "iv_skew": -0.2187,
+        "price": 231.82,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:37.654684"
+      }
+    },
+    "ARKK": {
+      "score": 51.49,
+      "weight": 0.101211,
+      "delta_threshold": 3,
+      "kappa": 0.000213,
+      "mcv": 0.1396,
+      "sigma_annualized": 0.3756,
+      "last_score_update": "2026-04-09T03:25:40.434603",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": null,
+        "p_fcf": null,
+        "ai_exposure": 0.4,
+        "short_interest": null,
+        "days_to_cover": null,
+        "borrow_fee": 0.01,
+        "iv_skew": 0.0469,
+        "price": 70.36,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:38.026401"
+      }
+    },
+    "GOOGL": {
+      "score": 50.58,
+      "weight": 0.099422,
+      "delta_threshold": 4,
+      "kappa": -0.000166,
+      "mcv": 0.0772,
+      "sigma_annualized": 0.2908,
+      "last_score_update": "2026-04-09T03:25:40.434647",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": 9.38042534236775,
+        "p_fcf": 100.78193338581255,
+        "ai_exposure": 0.5,
+        "short_interest": 0.0137,
+        "days_to_cover": 2.64,
+        "borrow_fee": 0.00685,
+        "iv_skew": -0.2778,
+        "price": 317.32,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:38.407546"
+      }
+    },
+    "MSFT": {
+      "score": 35.76,
+      "weight": 0.070291,
+      "delta_threshold": 3,
+      "kappa": -0.000233,
+      "mcv": 0.0711,
+      "sigma_annualized": 0.2412,
+      "last_score_update": "2026-04-09T03:25:40.434688",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": 9.210751788893125,
+        "p_fcf": 51.86669126477872,
+        "ai_exposure": 0.55,
+        "short_interest": 0.0108,
+        "days_to_cover": 2.5,
+        "borrow_fee": 0.0054,
+        "iv_skew": -0.1494,
+        "price": 374.33,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:38.832101"
+      }
+    },
+    "NVDA": {
+      "score": 88.76,
+      "weight": 0.17447,
+      "delta_threshold": 3,
+      "kappa": -0.000254,
+      "mcv": 0.1955,
+      "sigma_annualized": 0.3541,
+      "last_score_update": "2026-04-09T03:25:40.434729",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": 20.249658834232058,
+        "p_fcf": 76.13161824030328,
+        "ai_exposure": 0.95,
+        "short_interest": 0.0098,
+        "days_to_cover": 1.28,
+        "borrow_fee": 0.0049,
+        "iv_skew": -0.1484,
+        "price": 182.08,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:39.237576"
+      }
+    },
+    "PLTR": {
+      "score": 100.0,
+      "weight": 0.196564,
+      "delta_threshold": 5,
+      "kappa": 0.000148,
+      "mcv": 0.1879,
+      "sigma_annualized": 0.5343,
+      "last_score_update": "2026-04-09T03:25:40.434771",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": 73.69216775224643,
+        "p_fcf": 266.9897107124458,
+        "ai_exposure": 0.8,
+        "short_interest": 0.024,
+        "days_to_cover": 1.0,
+        "borrow_fee": 0.012,
+        "iv_skew": -0.0156,
+        "price": 140.76,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:39.622445"
+      }
+    },
+    "QQQ": {
+      "score": 51.36,
+      "weight": 0.100955,
+      "delta_threshold": 999,
+      "kappa": -1e-06,
+      "mcv": 0.0646,
+      "sigma_annualized": 0.1763,
+      "last_score_update": "2026-04-09T03:25:40.434811",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": null,
+        "p_fcf": null,
+        "ai_exposure": 0.35,
+        "short_interest": null,
+        "days_to_cover": null,
+        "borrow_fee": 0.01,
+        "iv_skew": 0.0686,
+        "price": 606.09,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:40.052755"
+      }
+    },
+    "SMCI": {
+      "score": 78.74,
+      "weight": 0.154775,
+      "delta_threshold": 2,
+      "kappa": 0.000344,
+      "mcv": 0.183,
+      "sigma_annualized": 0.7704,
+      "last_score_update": "2026-04-09T03:25:40.434848",
+      "status": "active",
+      "live_inputs": {
+        "ev_sales": 0.5401834835330668,
+        "p_fcf": 135.6132836490143,
+        "ai_exposure": 0.65,
+        "short_interest": 0.19700001,
+        "days_to_cover": 3.61,
+        "borrow_fee": 0.098500005,
+        "iv_skew": 0.5937,
+        "price": 23.37,
+        "data_source": "yfinance",
+        "fetched_at": "2026-04-09T03:25:40.420411"
+      }
+    }
+  },
+  "last_rebalance": "2026-04-09T03:25:40.434485",
+  "rebalance_count": 1,
+  "version": "1.0",
+  "_schema": {
+    "assets": {
+      "description": "Per-asset state populated by score_engine.py on each run",
+      "example": {
+        "NVDA": {
+          "score": 120,
+          "weight": 0.24,
+          "delta_threshold": 3,
+          "kappa": -0.000254,
+          "mcv": 0.1955,
+          "sigma_annualized": 0.55,
+          "last_score_update": null,
+          "status": "active"
+        }
+      }
+    }
+  },
+  "validation_state": "live"
+}

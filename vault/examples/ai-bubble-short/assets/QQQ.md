@@ -1,0 +1,28 @@
+---
+node_type: asset
+asset: QQQ
+bucket: benchmark
+score: 30
+weight: 0.06
+delta_threshold: 999
+kappa: -1.0e-06
+mcv: 0.0646
+sigma_annualized: 0.22
+last_rebalance: '2026-04-08'
+rebalance_trigger: score_update
+status: active
+notes: "EXAMPLE \u2014 variance-neutral benchmark anchor, effectively exempt."
+---
+
+# QQQ
+
+> ⚠️ EXAMPLE INSTANTIATION
+
+## Prior
+[See central-node.md]
+
+## Observations
+<!-- Auto-populated from stack commits -->
+
+## Links
+[[central-node]] [[pii-index]]
