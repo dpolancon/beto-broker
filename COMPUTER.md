@@ -6,8 +6,9 @@
 
 ```
 beto-broker/
-├── living-system-prompt/   ← the system: vault, dashboard, scripts, PROMPT.md
-└── original_research_bigshort/  ← the three research reports that seed the central node
+├── COMPUTER.md                          ← you are here
+├── living-system-prompt/                ← the system (vault, dashboard, scripts, PROMPT.md)
+└── original_research_bigshort/          ← 3 research reports seeding the central node
 ```
 
 ## What this repo is
@@ -17,8 +18,8 @@ Full specification: `living-system-prompt/PROMPT.md` — read it before making a
 
 ## Current version
 
-- **Prompt version**: 1.0
-- **Tagged**: initial commit
+- **Prompt version**: 1.0.1
+- **Commit**: ec3b0fd
 - **Date**: 2026-04-08
 - **Owner**: dpolancon
 - **Visibility**: public
@@ -28,7 +29,7 @@ Full specification: `living-system-prompt/PROMPT.md` — read it before making a
 ### Reading
 - `living-system-prompt/PROMPT.md` — full system spec. Read before any task.
 - `living-system-prompt/vault/system/stack.json` — pending suggestions buffer.
-- `living-system-prompt/vault/system/pii-index.json` — PII index state.
+- `living-system-prompt/vault/system/pii-index.json` — PII index state + per-asset weights.
 - `living-system-prompt/vault/my-priors/central-node.md` — user's active thesis.
 - `living-system-prompt/vault/libraries/*.md` — library toggle states.
 - `original_research_bigshort/` — the three research reports that seed the central node.
@@ -46,24 +47,32 @@ Full specification: `living-system-prompt/PROMPT.md` — read it before making a
 |---|---|---|
 | System specification | `living-system-prompt/PROMPT.md` | v1.0 complete |
 | Original research | `original_research_bigshort/` | 3 reports — seeds central node |
-| Vault skeleton | `living-system-prompt/vault/` | Initialized |
+| Vault skeleton | `living-system-prompt/vault/` | Complete |
 | Worked example | `living-system-prompt/vault/examples/ai-bubble-short/` | NVDA node only |
 | User prior | `living-system-prompt/vault/my-priors/central-node.md` | Empty — awaiting user |
-| Library registry | `living-system-prompt/vault/libraries/` | 3 nodes (py_vollib, yfinance, ib_insync) |
-| Dashboard | `living-system-prompt/dashboard/app.py` | Scaffold only |
+| Library registry | `living-system-prompt/vault/libraries/` | 17 nodes — all domains complete |
+| Dashboard | `living-system-prompt/dashboard/app.py` | Scaffold — no live data yet |
 | Score engine | `living-system-prompt/scripts/score_engine.py` | Formula complete, needs live data |
 | Stack manager | `living-system-prompt/scripts/stack_manager.py` | Complete |
 | Vault watcher | `living-system-prompt/scripts/vault_watcher.py` | Complete |
+| Rebalance engine | `living-system-prompt/scripts/rebalance_engine.py` | Complete |
+| PII index state | `living-system-prompt/vault/system/pii-index.json` | Patched with assets field |
 
 ## What needs to be built next
 
 - [ ] Wire score_engine.py to live yfinance data
 - [ ] Wire dashboard to IBKR Client Portal API (post .env credentials)
 - [ ] Add remaining example asset nodes (AMD, SMCI, MSFT, GOOGL, PLTR, ARKK, QQQ)
-- [ ] Add remaining library nodes (vectorbt, websockets, scikit-learn, streamlit, etc.)
-- [ ] Build rebalance_engine.py — delta threshold checks + PII update
 - [ ] Build dashboard panels: PII chart, scoring table, options greeks, risk monitor
 - [ ] Build scripts/ibkr_client.py — IBKR Client Portal REST wrapper
+- [ ] Wire rebalance_engine.py into vault_watcher.py trigger loop
+
+## Consistency status
+
+Audited 2026-04-08. All gaps resolved in v1.0.1:
+- pii-index.json: assets field added with full per-ticker schema
+- vault/libraries/: all 17 library nodes present (3 domains × multiple libs + ai-assistants/)
+- scripts/rebalance_engine.py: created, consistent with PROMPT.md Part V formula and Part VI stack schema
 
 ## How to resume in a new Computer session
 
@@ -77,4 +86,4 @@ Here is what I need today: [YOUR TASK]
 
 ---
 
-*This file is maintained by Computer. Updated after each session.*
+*This file is maintained by Computer. Last updated: 2026-04-08 after v1.0.1 consistency audit.*
